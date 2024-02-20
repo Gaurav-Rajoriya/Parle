@@ -1,0 +1,104 @@
+.event-container{
+    max-width: 1920px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #FBCB69;
+    padding:2rem 5rem;
+}
+
+.event{
+    width: 100%;
+    height: 100%;
+    padding: 5rem;
+    margin: 0 auto;
+}
+
+.event-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.event h2{
+    font-size: 3rem;
+    color:#FA2E7D;
+    margin-bottom: 20px;
+}
+
+.event p{
+    font-size:1.2rem;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.event-box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    margin-top: 50px !important;
+}
+
+.event-card {
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.4)),url(https://websitedemos.net/party-planner-02/wp-content/uploads/sites/991/2021/11/img-1.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: 0.8s ease-in-out;
+}
+
+.event-card h4{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.event-card:hover{
+   
+    background: linear-gradient(rgba(245, 54, 172, 0.199),rgba(245, 54, 172, 0.233)),url(https://websitedemos.net/party-planner-02/wp-content/uploads/sites/991/2021/11/img-1.jpg);
+}
+
+@media screen and (max-width:767px) {
+    .event-container{
+        padding:1rem;
+    }
+    
+    .event{
+        padding: 1rem;
+    }
+    
+    .event-text{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+    }
+    
+    .event h2{
+        font-size: 2rem;
+       
+    }
+    
+    .event p{
+        font-size:1rem;
+        width: 100%;
+    }
+    
+    .event-box{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    .event-card {
+        width: 264px;
+        height: 178px;
+    }
+    
+   
+    
+}

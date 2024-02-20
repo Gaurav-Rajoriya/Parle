@@ -1,0 +1,102 @@
+.offers-container{
+    max-width: 1920px;
+    width: 100%;
+    height: 100vh;
+    background: url(https://websitedemos.net/party-planner-02/wp-content/uploads/sites/991/2021/11/img-6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem 5rem;
+}
+
+.offers-container .offer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.offers-container .offer h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.offers-container .offer h2::after{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    bottom: -2px;
+    left: 0;
+    border-radius: 10px;
+    background-color:white;
+}
+
+
+.offers-container .offer .offer-pack{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid white;
+}
+
+.offers-container .offer .offer-pack .offer-box{
+    width: 350px;
+    height: 200px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.offers-container .offer .offer-pack .offer-box h4{
+        font-size: 1.7rem;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 20px;
+}
+
+.offers-container .offer .offer-pack .offer-box p{
+    font-size: 18px;
+    color: #fff;
+  
+}
+
+@media screen and (max-width:767px){
+    .offers-container{
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+    }
+    
+    
+    .offers-container .offer h2{
+        font-size: 2.4rem;
+    }
+    
+    .offers-container .offer h2::after{
+        content: '';
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        bottom: -2px;
+        left: 0;
+        border-radius: 10px;
+        background-color:white;
+    }
+    
+    
+    .offers-container .offer .offer-pack{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+   
+  
+}

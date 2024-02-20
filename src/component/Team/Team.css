@@ -1,0 +1,117 @@
+.team-container{
+    max-width: 1920px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #FBCB69;
+    padding:2rem 5rem;
+}
+
+.team-container .team{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.team-container .team h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color:#FA2E7D;
+    position: relative;
+    margin-bottom: 20px;
+   
+}
+
+/* .team-container .team h2::after{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    bottom: -2px;
+    left: 0;
+    border-radius: 10px;
+    background-color:white;
+} */
+
+.team-container .team .team-pack{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.team-container .team .team-pack .team-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-container .team .team-pack .team-box .team-img{
+    width: 350px;
+    height: 350px;
+    border-radius:20px;
+}
+
+.team-container .team .team-pack .team-box .team-img img{
+    width: 100%;
+    height: 100%;
+    border-radius:20px;
+}
+
+.team-container .team .team-pack .team-box h4{
+    font-size: 1.8rem;
+    margin-top: 10px;
+    font-weight: 500;
+    color: #FA2E7D;
+}
+
+.team-container .team .team-pack .team-box p{
+    font-size:16px ;
+    color: gray;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.team-container .team .team-pack .team-box .social-icons{
+    color: #FA2E7D;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (max-width:767px){
+    .team-container{
+        padding:1rem;
+    }
+    
+    
+    .team-container .team h2{
+        font-size: 2.2rem;
+    }
+    
+    
+    .team-container .team .team-pack{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+   
+    
+    .team-container .team .team-pack .team-box .team-img{
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+    }
+    
+    
+    .team-container .team .team-pack .team-box h4{
+        font-size: 1.4rem;
+        margin-top: 3px;
+    }
+    
+    .team-container .team .team-pack .team-box p{
+        margin-top: 7px;
+        margin-bottom:7px;
+    }
+  
+}

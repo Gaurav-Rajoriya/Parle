@@ -1,0 +1,92 @@
+.contact-container{
+    max-width: 1920px;
+    width: 100%;
+    height: 100vh;
+    padding: 2rem 5rem;
+    background-color: #FBCB69;
+}
+
+.contact-container .contact{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-container .contact .con-img{
+    width: 500px;
+    height: 460px;
+}
+
+
+.contact-container .contact .con-text{
+    width: 450px;
+    height: 300px;
+    background-color: #FA2E7D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.contact-container .contact .con-text h4{
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.contact-container .contact .con-text p{
+    font-size: 14px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.contact-container .contact .con-text .con-btn{
+    background-color: white;
+    color: black;
+}
+
+
+@media screen and (max-width:767px) {
+    .contact-container{
+        padding:0;
+        height: 100%;
+    }
+    
+    .contact-container .contact{
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    
+    .contact-container .contact .con-img{
+        width: 400px;
+        height: 300px;
+    }
+
+    .contact-container .contact .con-text{
+        width: 400px;
+        padding: 3rem;
+        align-items: flex-start;
+        margin-top: -30px;
+    }
+    
+    
+   
+    
+    .contact-container .contact .con-text h4{
+        font-size: 2.5rem;
+    }
+    
+    .contact-container .contact .con-text p{
+        font-size: 14px;
+        color: white;
+        margin-bottom: 10px;
+    }
+    
+    .contact-container .contact .con-text .con-btn{
+        background-color: white;
+        color: black;
+    }
+}
